@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.common{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: red;
+    width: 100%;
+    height:100vh;
+    display: grid;
+    grid-template-columns:80px repeat(12,1fr);
+    grid-template-rows: 2fr 1fr 2fr 3fr;
+}
+.sidebar{
+    background-color: #7E18FF;
+    grid-row: 1/-1;
+}
+.header{
+    background-color: aqua;
+    grid-column:2/-1;
+}
+.star-one{
+    background-color: yellow;
+    grid-column: 2/5;
+}
+.star-two{
+    background-color: yellow;
+    grid-column: 5/8;
+}
+.star-three{
+    background-color: yellow;
+    grid-column: 8/11;
+}
+.star-four{
+    background-color: yellow;
+    grid-column: 11/14;
+}
+.chart-one{
+    grid-column:2/8;
+    background-color: rgb(122, 75, 103);
+}
+.chart-two{
+    grid-column:8/14;
+    background-color: rgb(122, 75, 103);
+}
+.overview{
+    background-color:khaki;
+    grid-column: 2/11;
+}
+.remainder{
+    background-color: #fff;
+    grid-column: 11/14;
+}
